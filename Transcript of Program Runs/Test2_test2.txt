@@ -1,0 +1,372 @@
+Welcome to Statistics Analyzer
+
+What would you like to do?
+Type 'HELP' for  options and 'END' to stop
+
+HELP
+--------------------------------------------------HELP----------------------------------------------------
+List of Commands with syntax:
+
+Command Syntax                Example Command               Description
+read (datafilename.extension) read test2.txt                reads the given file and places it in two vectors
+switch                        switch                        switches x and y data
+count (x/y)                   count y                       shows how many items are in the chosen column/data set
+showall                       showall                       shows all the data of the data frame*
+head (# of items)             head 5                        shows the first few data items of the data frame
+tail (# of items)             tail 5                        shows the last few data items of the data frame
+max (x/y)                     max y                         shows the maximum value in the chosen column/data set
+min (x/y)                     min y                         shows the minimum value in the chosen column/data set
+range (x/y)                   range y                       shows the range of the chosen column/data set
+mean (x/y)                    mean x                        shows the mean of the chosen column/data set
+median (x/y)                  median x                      shows the median of the chosen column/data set
+mode (x/y)                    mode x                        shows one* mode of the chosen column/data set
+PVar (x/y)                    PVar x                        shows the population variance of the chosen column/data set
+SVar (x/y)                    SVar x                        shows the sample variance of the chosen column/data set
+PStdev (x/y)                  PStdev x                      shows the population standard deviation of
+                                                              the chosen column/data set
+SStdev (x/y)                  SStdev x                      shows the sample standard deviation of the chosen
+                                                              column/data set
+Hist (x/y) (Increment)        Hist x 10                     shows the histogram of the chosen column/data set
+cd                            cd                            shows the correlation of determination of the data frame
+lbf                           lbf                           shows the line of best fit and correlation coefficents
+                                                              of the data frame
+HELP                          HELP                          shows all the possible commands in the program
+END                           END                           Ends the program
+
+Please type the command as seen
+*If data size is large, it is suggested not to use this command
+*Please input text files with 2 columns of data separated by a tab only
+*The program would only output a single mode if there are multiple modes in the data set
+
+read test2.txt
+
+
+Importing files to x and y
+
+Done importing files to x and y
+
+showall
+Show Data
+x           y
+1           100
+2           99
+3           98
+4           97
+5           96
+6           95
+7           94
+8           93
+9           92
+10          91
+11          90
+12          89
+13          88
+14          87
+15          86
+16          85
+17          84
+18          83
+19          82
+20          81
+21          80
+22          79
+23          78
+24          77
+25          76
+26          75
+27          74
+28          73
+29          72
+30          71
+31          70
+32          69
+33          68
+34          67
+35          66
+36          65
+37          64
+38          63
+39          62
+40          61
+41          60
+42          59
+43          58
+44          57
+45          56
+46          55
+47          54
+48          53
+49          52
+50          51
+51          50
+52          49
+53          48
+54          47
+55          46
+56          45
+57          44
+58          43
+59          42
+60          41
+61          40
+62          39
+63          38
+64          37
+65          36
+66          35
+67          34
+68          33
+69          32
+70          31
+71          30
+72          29
+73          28
+74          27
+75          26
+76          25
+77          24
+78          23
+79          22
+80          21
+81          20
+82          19
+83          18
+84          17
+85          16
+86          15
+87          14
+88          13
+89          12
+90          11
+91          10
+92          9
+93          8
+94          7
+95          6
+96          5
+97          4
+98          3
+99          2
+100         1
+Data has 100 items
+
+switch
+Switching x and y...
+Switched x and y
+
+showall
+Show Data
+x           y
+100         1
+99          2
+98          3
+97          4
+96          5
+95          6
+94          7
+93          8
+92          9
+91          10
+90          11
+89          12
+88          13
+87          14
+86          15
+85          16
+84          17
+83          18
+82          19
+81          20
+80          21
+79          22
+78          23
+77          24
+76          25
+75          26
+74          27
+73          28
+72          29
+71          30
+70          31
+69          32
+68          33
+67          34
+66          35
+65          36
+64          37
+63          38
+62          39
+61          40
+60          41
+59          42
+58          43
+57          44
+56          45
+55          46
+54          47
+53          48
+52          49
+51          50
+50          51
+49          52
+48          53
+47          54
+46          55
+45          56
+44          57
+43          58
+42          59
+41          60
+40          61
+39          62
+38          63
+37          64
+36          65
+35          66
+34          67
+33          68
+32          69
+31          70
+30          71
+29          72
+28          73
+27          74
+26          75
+25          76
+24          77
+23          78
+22          79
+21          80
+20          81
+19          82
+18          83
+17          84
+16          85
+15          86
+14          87
+13          88
+12          89
+11          90
+10          91
+9           92
+8           93
+7           94
+6           95
+5           96
+4           97
+3           98
+2           99
+1           100
+Data has 100 items
+
+cd
+Coefficient of Determination
+Percentage variation in y: r^2 = 1
+
+lbf
+Line of Best Fit Formula
+
+Line of Best Fit:
+y = -1x + 101
+
+Corellation Coefficient:
+r = -1
+Very high negative correlation
+
+Hist x 10
+Histogram
+[ 1, 11): 10
+[ 11, 21): 10
+[ 21, 31): 10
+[ 31, 41): 10
+[ 41, 51): 10
+[ 51, 61): 10
+[ 61, 71): 10
+[ 71, 81): 10
+[ 81, 100): 19
+ > 100: 1
+Total counted: 100
+
+count x
+x has 100 items
+
+head 20
+
+Head
+
+x           y
+100         1
+99          2
+98          3
+97          4
+96          5
+95          6
+94          7
+93          8
+92          9
+91          10
+90          11
+89          12
+88          13
+87          14
+86          15
+85          16
+84          17
+83          18
+82          19
+81          20
+
+tail 5
+
+Tail
+x           y
+5           96
+4           97
+3           98
+2           99
+1           100
+
+max x
+Maximum value is: 100
+
+min y
+Minimum value is: 1
+
+range y
+Range
+Range is 99
+
+mean x
+Mean
+Mean is 50.5
+
+median x
+Median
+Median is: 50.5
+
+mode x
+Mode
+Mode does not exist.
+
+PVar x
+Population Variance
+Population Variance: 833.25
+
+SVar y
+Sample Variance
+Sample Variance: 841.667
+
+PStdev x
+Population Standard Deviation
+Population Standard Deviation: 28.8661
+
+SStdev y
+Sample Standard Deviation
+Sample Standard Deviation: 29.0115
+
+END
+Thank you for using Statistics Analyzer
+
+Process returned 0 (0x0)   execution time : 249.629 s
+Press any key to continue.
+

@@ -1,0 +1,366 @@
+Welcome to Statistics Analyzer
+
+What would you like to do?
+Type 'HELP' for  options and 'END' to stop
+
+read
+Please enter name of file to read: posandneg.txt
+
+
+Importing files to x and y
+
+Done importing files to x and y
+
+showall
+Show Data
+x           y
+-14         -46
+43          -28
+15          2
+-27         45
+-18         47
+-30         0
+-12         -15
+-21         42
+8           19
+-35         -49
+18          1
+33          -9
+16          -20
+32          35
+10          -48
+-29         18
+-48         25
+19          14
+28          -41
+-49         -42
+37          -39
+3           -13
+-41         -25
+-44         50
+12          -36
+-46         -23
+-25         -44
+-3          13
+13          8
+-17         -6
+46          -50
+49          36
+-15         -45
+30          11
+23          17
+-28         3
+22          -18
+-22         -5
+1           -29
+2           -3
+26          -12
+35          26
+7           33
+-9          46
+25          -43
+17          -8
+34          -22
+-23         15
+-36         29
+-38         7
+Data has 50 items
+
+HELP
+--------------------------------------------------HELP----------------------------------------------------
+List of Commands with syntax:
+
+Command Syntax                Example Command               Description
+read (datafilename.extension) read test2.txt                reads the given file and places it in two vectors
+switch                        switch                        switches x and y data
+count (x/y)                   count y                       shows how many items are in the chosen column/data set
+showall                       showall                       shows all the data of the data frame*
+head (# of items)             head 5                        shows the first few data items of the data frame
+tail (# of items)             tail 5                        shows the last few data items of the data frame
+max (x/y)                     max y                         shows the maximum value in the chosen column/data set
+min (x/y)                     min y                         shows the minimum value in the chosen column/data set
+range (x/y)                   range y                       shows the range of the chosen column/data set
+mean (x/y)                    mean x                        shows the mean of the chosen column/data set
+median (x/y)                  median x                      shows the median of the chosen column/data set
+mode (x/y)                    mode x                        shows one* mode of the chosen column/data set
+PVar (x/y)                    PVar x                        shows the population variance of the chosen column/data set
+SVar (x/y)                    SVar x                        shows the sample variance of the chosen column/data set
+PStdev (x/y)                  PStdev x                      shows the population standard deviation of
+                                                              the chosen column/data set
+SStdev (x/y)                  SStdev x                      shows the sample standard deviation of the chosen
+                                                              column/data set
+Hist (x/y) (Increment)        Hist x 10                     shows the histogram of the chosen column/data set
+cd                            cd                            shows the correlation of determination of the data frame
+lbf                           lbf                           shows the line of best fit and correlation coefficents
+                                                              of the data frame
+HELP                          HELP                          shows all the possible commands in the program
+END                           END                           Ends the program
+
+Please type the command as seen
+*If data size is large, it is suggested not to use this command
+*Please input text files with 2 columns of data separated by a tab only
+*The program would only output a single mode if there are multiple modes in the data set
+
+switch
+Switching x and y...
+Switched x and y
+
+shwoall
+Please enter the right command, type HELP to know all the commands
+
+showall
+Show Data
+x           y
+-46         -14
+-28         43
+2           15
+45          -27
+47          -18
+0           -30
+-15         -12
+42          -21
+19          8
+-49         -35
+1           18
+-9          33
+-20         16
+35          32
+-48         10
+18          -29
+25          -48
+14          19
+-41         28
+-42         -49
+-39         37
+-13         3
+-25         -41
+50          -44
+-36         12
+-23         -46
+-44         -25
+13          -3
+8           13
+-6          -17
+-50         46
+36          49
+-45         -15
+11          30
+17          23
+3           -28
+-18         22
+-5          -22
+-29         1
+-3          2
+-12         26
+26          35
+33          7
+46          -9
+-43         25
+-8          17
+-22         34
+15          -23
+29          -36
+7           -38
+Data has 50 items
+
+lbf
+Line of Best Fit Formula
+
+Line of Best Fit:
+y = -0.126614x + -0.968212
+
+Corellation Coefficient:
+r = -0.133638
+Negligible negative correlation
+
+cb
+Please enter the right command, type HELP to know all the commands
+
+cd
+Coefficient of Determination
+Percentage variation in y: r^2 = 0.0178592
+
+Hist x 10
+Histogram
+[ -50, -40): 9
+[ -40, -30): 2
+[ -30, -20): 5
+[ -20, -10): 5
+[ -10, 0): 5
+[ 0, 10): 6
+[ 10, 20): 7
+[ 20, 30): 3
+[ 30, 40): 3
+[ 40, 50): 4
+ > 50: 1
+Total counted: 50
+
+Hist y
+Please enter increments per bin: 10
+Histogram
+[ -49, -39): 5
+[ -39, -29): 4
+[ -29, -19): 7
+[ -19, -9): 5
+[ -9, 1): 2
+[ 1, 11): 6
+[ 11, 21): 7
+[ 21, 31): 6
+[ 31, 49): 7
+ > 49: 1
+Total counted: 50
+
+head 10
+
+Head
+
+x           y
+-46         -14
+-28         43
+2           15
+45          -27
+47          -18
+0           -30
+-15         -12
+42          -21
+19          8
+-49         -35
+
+tail 11
+
+Tail
+x           y
+-3          2
+-12         26
+26          35
+33          7
+46          -9
+-43         25
+-8          17
+-22         34
+15          -23
+29          -36
+7           -38
+
+switch
+Switching x and y...
+Switched x and y
+
+head
+Please enter how many items you want to see: 10
+
+Head
+
+x           y
+-14         -46
+43          -28
+15          2
+-27         45
+-18         47
+-30         0
+-12         -15
+-21         42
+8           19
+-35         -49
+
+tail
+Please enter how many items you want to see: 11
+
+Tail
+x           y
+2           -3
+26          -12
+35          26
+7           33
+-9          46
+25          -43
+17          -8
+34          -22
+-23         15
+-36         29
+-38         7
+
+hist
+Please enter the right command, type HELP to know all the commands
+
+Hist
+Please choose between x or y: y
+Please enter increments per bin: 11
+Histogram
+[ -50, -39): 9
+[ -39, -28): 3
+[ -28, -17): 6
+[ -17, -6): 5
+[ -6, 5): 7
+[ 5, 16): 6
+[ 16, 27): 5
+[ 27, 38): 4
+[ 38, 50): 4
+ > 50: 1
+Total counted: 50
+
+Hist x
+Please enter increments per bin: 11
+Histogram
+[ -49, -38): 5
+[ -38, -27): 6
+[ -27, -16): 7
+[ -16, -5): 4
+[ -5, 6): 4
+[ 6, 17): 7
+[ 17, 28): 7
+[ 28, 49): 9
+ > 49: 1
+Total counted: 50
+
+range
+Please choose between x or y: z
+Error, unknown column/data set
+
+range
+Please choose between x or y: x
+Range
+Range is 98
+
+range zysd
+Error, unknown column/data set
+
+range y
+Range
+Range is 100
+
+mean y
+Mean
+Mean is -3.54
+
+median y
+Median
+Median is: -4
+
+mode x
+Mode
+Mode does not exist.
+
+PVar x
+Population Variance
+Population Variance: 784.25
+
+SVar
+Please choose between x or y: y
+Sample Variance
+Sample Variance: 891.519
+
+PStdev
+Please choose between x or y: x
+Population Standard Deviation
+Population Standard Deviation: 28.0045
+
+SStdev y
+Sample Standard Deviation
+Sample Standard Deviation: 29.8583
+
+END
+Thank you for using Statistics Analyzer
+
+Process returned 0 (0x0)   execution time : 212.612 s
+Press any key to continue.

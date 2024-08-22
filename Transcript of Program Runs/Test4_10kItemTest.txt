@@ -1,0 +1,207 @@
+Welcome to Statistics Analyzer
+
+What would you like to do?
+Type 'HELP' for  options and 'END' to stop
+
+HELP
+--------------------------------------------------HELP----------------------------------------------------
+List of Commands with syntax:
+
+Command Syntax                Example Command               Description
+read (datafilename.extension) read test2.txt                reads the given file and places it in a vector
+switch                        switch                        switches x and y data
+count (x/y)                   count y                       shows how many items are in the chosen data set
+showall                       showall                       shows all the data of the data frame*
+head (# of items)             head 5                        shows the first few data items of the data frame
+tail (# of items)             tail 5                        shows the last few data items of the data frame
+max (x/y)                     max y                         shows the maximum value in the chosen column/data set
+min (x/y)                     min y                         shows the minimum value in the chosen column/data set
+range (x/y)                   range y                       shows the range of the chosen column/data set
+mean (x/y)                    mean x                        shows the mean of the chosen column/data set
+median (x/y)                  median x                      shows the median of the chosen column/data set
+mode (x/y)                    mode x                        shows one* mode of the chosen column/data set
+PVar (x/y)                    PVar x                        shows the population variance of the chosen column/data set
+SVar (x/y)                    SVar x                        shows the sample variance of the chosen column/data set
+PStdev (x/y)                  PStdev x                      shows the population standard deviation of
+                                                              the chosen column/data set
+SStdev (x/y)                  SStdev x                      shows the sample standard deviation of the chosen
+                                                              column/data set
+Hist (x/y) (Increment)        Hist x 10                     shows the histogram of the chosen column/data set
+cd                            cd                            shows the correlation of determination of the data frame
+lbf                           lbf                           shows the line of best fit and correlation coefficents
+                                                              of the data frame
+HELP                          HELP                          shows all the possible commands in the program
+END                           END                           Ends the program
+
+Please type the command as seen
+*If data size is large, it is suggested not to use this command
+*Please input text files with 2 columns of data separated by a tab only
+*The program would only output a single mode if there are multiple modes in the data set
+
+read
+Please enter name of file to read: hell.txt
+
+
+Importing files to x and y
+
+Done importing files to x and y
+
+count
+Please choose between x and y: x
+x has 10000 items
+
+count y
+y has 10000 items
+
+head
+Please enter how many items you want to see: 5
+
+Head
+
+x           y
+9408        5171
+4829        9327
+6499        4103
+3834        866
+3718        2254
+
+tail 5
+
+Tail
+x           y
+9074        299
+2003        1079
+3754        3525
+1430        9491
+5029        7607
+
+max x
+Maximum value is: 9998
+
+max
+Please choose between x or y: y
+Maximum value is: 9997
+
+min y
+Minimum value is: 0
+
+min
+Please choose between x or y: x
+Minimum value is: 0
+
+range x
+Range
+Range is 9998
+
+range
+Please choose between x or y: y
+Range
+Range is 9997
+
+mean x
+Mean
+Mean is 5019.65
+
+mean
+Please choose between x or y: y
+Mean
+Mean is 5023.46
+
+median x
+Median
+Median is: 4996.5
+
+median
+Please choose between x or y: y
+Median
+Median is: 4987
+
+mode x
+Mode
+Mode is: 3228
+
+mode
+Please choose between x or y: y
+Mode
+Mode is: 5337
+
+PVar x
+Population Variance
+Population Variance: 8.29522e+006
+
+PVar
+Please choose between x or y: x
+Population Variance
+Population Variance: 8.29522e+006
+
+Svar x
+Please enter the right command, type HELP to know all the commands
+
+SVar x
+Sample Variance
+Sample Variance: 8.29605e+006
+
+SVar y
+Sample Variance
+Sample Variance: 8.42991e+006
+
+SStdev x
+Sample Standard Deviation
+Sample Standard Deviation: 2880.29
+
+SStdev xx
+Error, unknown column/data set
+
+SStdev y
+Sample Standard Deviation
+Sample Standard Deviation: 2903.43
+
+Hist
+Please choose between x or y: x
+Please enter increments per bin: 1000
+Histogram
+[ 0, 1000): 961
+[ 1000, 2000): 985
+[ 2000, 3000): 1024
+[ 3000, 4000): 1011
+[ 4000, 5000): 1023
+[ 5000, 6000): 977
+[ 6000, 7000): 975
+[ 7000, 8000): 1023
+[ 8000, 9998): 2020
+ > 9998: 1
+Total counted: 10000
+
+Hist y 1000
+Histogram
+[ 0, 1000): 957
+[ 1000, 2000): 1014
+[ 2000, 3000): 1029
+[ 3000, 4000): 998
+[ 4000, 5000): 1013
+[ 5000, 6000): 962
+[ 6000, 7000): 962
+[ 7000, 8000): 1019
+[ 8000, 9997): 2043
+ > 9997: 3
+Total counted: 10000
+
+lbf
+Line of Best Fit Formula
+
+Line of Best Fit:
+y = 0.00629764x + 4991.85
+
+Corellation Coefficient:
+r = 0.00624744
+Negligible positive correlation
+
+cd
+Coefficient of Determination
+Percentage variation in y: r^2 = 3.90305e-005
+
+END
+Thank you for using Statistics Analyzer
+
+Process returned 0 (0x0)   execution time : 217.975 s
+Press any key to continue.
